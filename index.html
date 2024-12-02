@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Educación</title>
+
+    <!-- Agregar enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Barra de navegación (Navbar) con menú desplegable -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #802434;">
+        <div class="container-fluid">
+
+            <!-- Logotipo 1 a la izquierda -->
+            <div class="d-flex justify-content-start w-25">
+                <img src="logo1.png" alt="Logo 1" class="navbar-logo" style="max-height: 50px;">
+            </div>
+
+            <!-- Menú centrado -->
+            <div class="d-flex justify-content-center w-55">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="conserjes-secretarias.html">Conserjes y Secretarias</a></li>
+                                <li><a class="dropdown-item" href="convocatoria.html">Convocatoria</a></li>
+                                <li><a class="dropdown-item" href="reglas.html">Reglas</a></li>
+                                <li><a class="dropdown-item" href="padron.html">Padrón</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Menú Mejoría -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mejoriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mejora Regulatoria
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mejoriaDropdown">
+                                <li class="dropdown-item">
+                                    Trámites
+                                    <select class="form-select mt-2" onchange="redirectToPage(this.value)">
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="convenios.html">Convenios</option>
+                                        <option value="servicio-social.html">Servicio Social</option>
+                                        <option value="becas-convenios.html">Becas Convenios</option>
+                                        <option value="credenciales-biblioteca.html">Credenciales de Biblioteca</option>
+                                    </select>
+                                </li>
+                                <li class="dropdown-item">
+                                    REMTYS
+                                    <select class="form-select mt-2" onchange="redirectToPage(this.value)">
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="formato.html">Formato</option>
+                                        <option value="blog.html">Blog</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Menú Gestoría (con solo una opción, sin submenú) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Gestoría</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logotipo 2 a la derecha -->
+            <div class="d-flex justify-content-end w-25">
+                <img src="logo2.png" alt="Logo 2" class="navbar-logo" style="max-height: 50px;">
+            </div>
+
+            <!-- Botón para el menú móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container mt-4 text-center">
+        <h1>Bienvenido al Departamento de Educación en Ixtapaluca</h1>
+        <p class="lead">El Departamento de Educación en Ixtapaluca tiene como objetivo brindar acceso a programas educativos de calidad, impulsar el desarrollo académico y ofrecer herramientas para el crecimiento personal y profesional de los ciudadanos. Nuestra misión es fomentar el aprendizaje, la formación integral y el empoderamiento de los habitantes del municipio a través de diversas iniciativas educativas.</p>
+        <p>Selecciona una opción del menú para conocer más sobre los programas disponibles.</p>
+    </main>
+
+    <!-- Agregar los scripts de Bootstrap y JavaScript personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para redirigir al usuario a una página basada en el valor del <select>
+        function redirectToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
+        }
+    </script>
+
+</body>
+</html>
