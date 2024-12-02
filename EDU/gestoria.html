@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Educación</title>
+
+    <!-- Agregar enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Barra de navegación (Navbar) con menú desplegable -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #802434;">
+        <div class="container-fluid">
+
+            <!-- Logotipo 1 a la izquierda -->
+            <div class="d-flex justify-content-start w-25">
+                <img src="logo1.png" alt="Logo 1" class="navbar-logo" style="max-height: 50px;">
+            </div>
+
+            <!-- Menú centrado -->
+            <div class="d-flex justify-content-center w-55">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="conserjes-secretarias.html">Conserjes y Secretarias</a></li>
+                                <li><a class="dropdown-item" href="convocatoria.html">Convocatoria</a></li>
+                                <li><a class="dropdown-item" href="reglas.html">Reglas</a></li>
+                                <li><a class="dropdown-item" href="padron.html">Padrón</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Menú Mejoría -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mejoriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mejoría
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mejoriaDropdown">
+                                <li><a class="dropdown-item" href="formato.html">Formato</a></li>
+                                <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Menú Gestoría (con solo una opción, sin submenú) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Gestoría</a>
+                        </li>
+
+                        <!-- Menú Trámite -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trámite</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logotipo 2 a la derecha -->
+            <div class="d-flex justify-content-end w-25">
+                <img src="logo2.png" alt="Logo 2" class="navbar-logo" style="max-height: 50px;">
+            </div>
+
+            <!-- Botón para el menú móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+
+        <!-- Sección vistosa centrada -->
+        <div class="info-section text-center">
+            <h2>Gestoría</h2>
+            <p><span class="highlight">Consulta el padrón oficial de beneficiarios de los programas educativos. Esta herramienta promueve la transparencia y permite verificar la inclusión en los distintos proyectos y apoyos.  
+  
+        </div>
+
+        
+
+        
+    </main>
+
+    <!-- Agregar los scripts de Bootstrap (esto es necesario para el menú desplegable) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
